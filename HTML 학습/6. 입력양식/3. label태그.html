@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    label{
+        display: inline;
+    }
+</style>
+<body>
+    <form action="#">
+        <label> <!--label로 감싸주면 한 쌍이 됨 : 자동로그인 글이 어디있던간에 괜찮음-->
+            <input type="checkbox"> 자동 로그인
+        </label>
+
+        <input type="checkbox" id="remember"> 
+
+        <label>
+            # 이름 : <input type="text">
+        </label>
+        <!--이름을 눌러도 input에 focusing이 되고 있음: 각각의 input마다 라벨을 달아주는게 좋다-->
+
+        <div>안녕</div>
+        <div>안녕</div>
+        <div>안녕</div>
+        <div>안녕</div>
+        <div>안녕</div>
+
+        <label for="remember">아이디 기억하기</label>
+        <!--label for로 라벨이 21번 라인 저 멀리 떨어져 있어도 연결됨-->
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .orange {
+        background: orange;
+    }
+/* 클래스는 . 아이디는 #*/
+    #tomato{
+        background: tomato;
+    }
+    .reverse {
+        width: fit-content;
+        transform: rotate(180deg);
+    }
+
+</style>
+
+<body>
+    <div>
+        <ul>
+            <li class="reverse">사과</li>
+            <li>포도</li>
+            <li class="orange reverse" >오렌지</li> <!--블록요소-->
+        </ul>
+        <!--스타일을 만들어 놓고 클래스를 뒤늦게 부여하는것도 가능하며 
+            클래스 여러개 띄어쓰기로 적용 가능-->
+        <!--div+p+span-->
+        <div>당근</div>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span> <!--인라인요소-->
+    </div>
+</body>
+
+</html>

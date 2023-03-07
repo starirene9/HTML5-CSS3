@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  /* 후손을 선택함 - 앞에 조상을 읊음 */
+  div .orange {
+    background: orange;
+  }
+
+  body #tomato {
+    background: tomato;
+  }
+  /* 꺽쇄를 빼고 띄어쓰기 하면 div의 모든 후손 중에서 클래스가 orange */
+  /* body#tomato 는 body id=tomato 바로 있어야 함. 띄어쓰기 해야 후손 선택자 */
+
+  .wrap div {
+    font-size: 1.5em;
+    color: orangered;
+  }
+  /* 유지 보수 측면에서 자식이 아닌 후손 선택자로 처리 하는 것이 좋다 */
+</style>
+
+<body>
+   
+    <h1 class="yellow low primary" id="change">안녕하세요</h1>
+
+    <div class="wrap">
+        <ul>
+            <li id="apple" class="reverse center">사과</li>
+            <li>포도</li>
+            <li class="orange" >오렌지</li> <!--블록요소-->
+        </ul>
+        <!--스타일을 만들어 놓고 클래스를 뒤늦게 부여하는것도 가능하며 
+            클래스 여러개 띄어쓰기로 적용 가능-->
+        <!--div+p+span-->
+        <section>
+        <div>당근</div>
+        </section>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span> <!--인라인요소-->
+    </div>
+</body>
+
+</html>

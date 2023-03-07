@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+
+        *이름 : <input type="text" value="홍길동" readonly> <br>
+        <!--value는 회원가입 수정시 사용 적혀있는값 readonly: 수정불가하며 단순히 띄어주는 용도-->
+        *패스워드 : <input type="password"> <br> <!--입력시 값이 가려져 나옴-->
+        *이메일 : <input type="email" placeholder="aaa@bbb.com"> <br>
+        *취미 :
+        <input type="checkbox"> 게임 <!--checkbox 다중체크 가능 -->
+        <input type="checkbox" checked> 축구 <!--checked : 처음부터 체크가 되어있는 상태로 시작-->
+        <input type="checkbox" disabled> 낮잠 <br> <!--disabled : 체크 불가-->
+
+        # 메일 수신 여부 :
+        <input type="radio" name="mail"> 예
+        <input type="radio" name="mail"> 아니오 <br>
+        <!-- name을 똑같이 맞춰주면 하나를 선택하면 하나가 풀린다 -->
+
+        # 주문 수량 :
+        <input type="number" max="10" value="1">
+        <input type="range" min="0" max="5" value="3"> <br>
+        <!-- range 는 선으로 표현 number는 위 아래 버튼으로 표현 -->
+        # 파일 :
+        <input type="file" multiple>
+        <!--multiple 시 한번에 여러개의 파일 업로드 가능 -->
+
+        <!-- 사용자 몰래 서버로 보내야 하는 데이터 -->
+        <input type="hidden" name="nickname" value="바보">
+
+        <br><br>
+        <button type="button">그냥버튼</button> <!--보통 이 깡버튼을 많이씀 : 여기서 기능 만들어 쓴다-->
+        <button type="reset">입력값 초기화버튼</button> <!--입력값을 다 지워주는 기능-->
+        <button type="submit">서버전송버튼</button> <!--실제로 쓰지 않음 -->
+
+        <input type="button" value="input버튼"> <!--empty tag라서 input에서 보다는 button태그 권고함-->
+    </form>
+
+</body>
+
+</html>

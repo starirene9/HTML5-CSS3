@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 인접 형제 선택자 */
+    .orange + li {
+        color: orangered;
+    }
+    /* + 는 형이 클래스 orange여야함 */
+
+    li + li {
+        font-size: 30px;
+    }
+    /* 첫 번째 tr 빼고 나머지 다 적용 가능 
+    형님이 없는 어린쥐 빼고 다 먹음 */
+
+    /* 일반 형제 선택자 */
+    .red ~ li {
+        background: red;
+    }
+    /*형들중에 class red 면 합격 */
+
+    .red + li {
+        background: blue;
+    }
+    
+</style>
+<body>
+    <ul>
+        <li class="orange">어린쥐</li>
+        <li>사과</li>
+        <li>딸기</li>
+        <li class="orange">오렌지</li>
+        <li class="red">자몽</li>
+        <li>포도</li>
+        <li>레몬</li>
+        <li>한라봉</li>
+        <li>거봉</li>
+    </ul>
+</body>
+</html>

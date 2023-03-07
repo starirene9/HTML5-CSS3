@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        /* height: 70px; */
+        display: inline-block;
+    }
+
+    /* 인라인블록 속성을 가짐 : 수평배치 되며 가로세로 사이즈 조정가능 */
+    button {
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <!--form이라는것 자체가 클라이언트:브라우저가 검색한 정보를 서버에 전달해주는 역할 -->
+    <form action="https://search.naver.com/search.naver" 
+        method="get" autocomplete="off" novalidate>
+        <!--post등록(회원가입, 보안좋음) get조회 해줘(기록남음, 기본값)-->
+        <!--autocomplete 하면 자동완성 꺼주는 기능이 있음 -->
+        <!--novalidate 이메일@ 하세요 이런 문구 꺼줌 -->
+
+        <input type="text" name="query">
+        <!--들고갈 이름을 정해줘야함 네이버에서는 query로 정해 놨음 -->
+        <button>검색</button>
+    </form>
+
+</body>
+
+</html>

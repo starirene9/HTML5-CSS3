@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*동시에 여러 조건을 만족하는 경우 : 반드시 붙여 써야함!!!!!! */
+    li.orange {
+        background: orange;
+    }
+    p#tomato {
+        background: tomato;
+    }
+    #apple.reverse {
+        color:red;
+    }
+    /* 위에 것만 있으면 먹힘 근데 띄어쓰기 하면 절대 안됨 */
+    h1.yellow.low.primary#change {
+        background: yellow;
+    }
+
+</style>
+
+<body>
+    <section id="top" class="side"></section>
+
+    <div class="grape"></div>
+
+    <h1 id="top"></h1>
+
+    <h1 class="yellow low primary" id="change">안녕하세요</h1>
+
+    <div>
+        <ul>
+            <li id="apple" class="reverse center">사과</li>
+            <li>포도</li>
+            <li class="orange" >오렌지</li> <!--블록요소-->
+        </ul>
+        <!--스타일을 만들어 놓고 클래스를 뒤늦게 부여하는것도 가능하며 
+            클래스 여러개 띄어쓰기로 적용 가능-->
+        <!--div+p+span-->
+        <div>당근</div>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span> <!--인라인요소-->
+    </div>
+</body>
+
+</html>

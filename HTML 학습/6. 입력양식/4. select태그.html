@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="apple" class="orange apple" action="#">
+
+        <input title="내 이름은" type="text" name="nick" value="홍길동" readonly> <br>
+        <!--readonly는 서버로 이름이 나감, disabled는 서버로 안 나감-->
+        <select name="coffee">
+            <option value="아메리카노">Americano</option>
+            <option value="카페라떼" selected>Caffe Latte</option> <!--selected 주면 caffe latte가 나옴-->
+            <option value="카푸치노" disabled>Cappuccino</option>
+        </select>
+        <!--value값을 주면 서버로 넘어갈때 한국어로 넘어감 -->
+        
+        <button>확인</button>
+        <!--버튼 기본속성 submit-->
+
+    </form>
+</body>
+</html>
