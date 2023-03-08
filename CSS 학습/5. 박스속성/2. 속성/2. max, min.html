@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent {
+        width: 100px;
+        height: 400px;
+        /* height는 보이게 하기위해 400px로 설정함 */
+        background: skyblue;
+    }
+
+    .child {
+        max-width: 500px;
+        /* width 100%니까 같이 부모가 400px이면 자식도 400으로 줄어 들음 
+        but 500을 넘어가면 정지 */
+        min-width: 200px;
+        /* 부모가 w 200미만으로 가면 그대로 자식은 w 최소값 200 고정 */
+        height: 200px;
+        background: orange;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>

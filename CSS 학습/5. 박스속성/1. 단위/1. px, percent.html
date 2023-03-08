@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        border: 2px solid gray;
+    } 
+        /* div border 전체 적용 */
+    .root {
+        width: 60%;
+         /* body 대비 60% */
+    }
+    .parent{
+        width: 50%;
+        /* root 대비 50% */
+    }
+    .child{
+        width: 50%; 
+        /* parent 대비 50% */
+    }
+     /* 픽셀로 처리하면 길이가 변하지 않아 핸드폰에서 잘려보임 */
+        /* px보다는 %를 사용 */
+</style>
+<body>
+    <!--.root>.parent>.child*2-->
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+
+</body>
+</html>
