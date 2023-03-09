@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- reset css -->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+    <!-- common css -->
+    <link rel="stylesheet" href="../../common.css">
+</head>
+<style>
+    section {
+        background-color: pink;
+        width: 50%;
+        margin: 15px auto 0;
+        border: 4px solid plum;
+        padding: 10px;
+    }
+
+    h1 {
+        /* background-color: yellow; */
+        width: fit-content;
+        margin: 15px auto 10px;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    section article * {
+        padding: 10px;
+        line-height: 1.6;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    /* 수평 만드려는것에 float left 놓아주면 됨 */
+    article:first-child {
+        width: 45%;
+        background: khaki;
+        float: left;
+    }
+
+    article:last-child {
+        width: 45%;
+        background: burlywood;
+        float: right;
+    }
+
+</style>
+
+<body>
+    <section class="main clearfix">
+        <h1>녹차와 커피</h1>
+        <div class="article-list clearfix">
+            <article>
+                <p> 녹차는 은은한 향을 좋아하는 사람들이 애용하는 차이다. 녹차를 마실 줄 모르는 사람들은
+                    티백들을 모두 뜯어 주전자에 넣고 끊이기도 하는데 강한 차의 향기도 견디기 힘들겠지만
+                    보관도 힘들고 그때그때 방금 끓인 듯한 맛을 느끼지 못하게 되며 진한 카페인 덕에 밤에
+                    잠들기도 힘들 것이다.
+                </p>
+            </article>
+            <article>
+                <p>
+                    녹차는 은은한 향을 좋아하는 사람들이 애용하는 차이다. 녹차를 마실 줄 모르는 사람들은
+                    티백들을 모두 뜯어 주전자에 넣고 끊이기도 하는데 강한 차의 향기도 견디기 힘들겠지만
+                    보관도 힘들고 그때그때 방금 끓인 듯한 맛을 느끼지 못하게 되며 진한 카페인 덕에 밤에
+                    잠들기도 힘들 것이다.
+                </p>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 해제용 클래스!! 먼저 만들어 놓고 나중에 적용*/
+    .clearfix::after {
+        content:'';
+        display: block;
+        clear: both;
+    }
+    /* 3. 이 방법을 써야함!!!! content display clear가 한 세트 */
+    /* clear: left right 둘 다인 both로 설정 */
+    .ct{
+        width: 700px;
+        padding: 20px;
+        border: 3px solid;
+        margin: 20px;
+        /* overflow: hidden;  2. 버그성 문제 때문에 하면 안 됨 */
+    }
+    /* ct와 clearfix 처럼 공통적인 것을 묶고 적용시킨다 부모 클래스에 */
+    .container1{
+        border-color: red;
+    }
+    .container2{
+        border-color: blue;
+    }
+    .container3{
+        border-color: green;
+    }
+    
+    .box {
+        width: 200px;
+        height: 150px;
+        border: 3px solid green;
+        background: yellowgreen;
+        border-radius: 20px;
+
+        float:left; 
+    }
+    /* .vbox{
+        clear:left;
+         } */
+
+         /* 1. 가상의 박스를 넣어서 클리어 용으로만 밀어 올리기 쓰기
+        그러나 쓸모없이 넣은거여서 사용 X */
+
+</style>
+<body>
+    <div class="ct container1 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="vbox"></div> -->
+    </div>
+    <div class="ct container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="ct container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

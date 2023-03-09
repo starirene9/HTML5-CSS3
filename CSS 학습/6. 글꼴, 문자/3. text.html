@@ -8,6 +8,20 @@
     <title>Document</title>
 </head>
 <style>
+    h1 {
+        text-align: center;
+        /*박스 내부에서 센터*/
+        color: red;
+        border-bottom: 3px solid blue;
+        /* background : orange */
+        width: fit-content;
+        /*박스의 가로 길이를 줄임*/
+        margin: 0 auto;
+        /*박스를 센터로 보내기*/
+        letter-spacing: 10px;
+        /* 자간 거리 */
+    }
+
     p {
         width: 80%;
         margin: 50px auto 0;
@@ -22,21 +36,7 @@
         /* 두 줄 이상일 경우에 적용 */
         text-indent: 10px;
         /* 들여쓰기, -도 줄수 있음 */
-        word-spacing: 10px;
-    }
-
-    h1 {
-        text-align: center;
-        /*박스 내부에서 센터*/
-        color: red;
-        border-bottom: 1px solid blue;
-        /* background : orange */
-        width: fit-content;
-        /*박스의 가로 길이를 줄임*/
-        margin: 0 auto;
-        /*박스를 센터로 보내기*/
-        letter-spacing: 10px;
-        /* 자간 거리 */
+        word-spacing: 8px;
     }
 
     /* 하나만 띄어쓰기 많이 하고 싶을때는 &nbsp;&nbsp; 직접 넣어주기  */
