@@ -14,13 +14,14 @@
             width: 550px;
             border: 3px double #123456;
             margin: 50px auto 0;
+            /*부모요소 section에 height를 잡지 말고 auto로 준다 */
         }
         section h1 {
             background: #abcdef;
             text-align: center;
-            font-weight: 700;
+            font-weight: 700; /*혹은 bold */
             padding: 15px 0;
-            letter-spacing: 5px;
+            letter-spacing: 5px; /*글자 사이의 간격*/
             font-size: 1.5em;
             border-bottom: 3px solid #123456;
         }
@@ -35,7 +36,7 @@
             font-weight: 700;
             font-size: 1.2em;
         }
-        section .content p {
+        section .content p { /*실무에서는 자식보다 후손처리*/
             font-size: 0.8em;
             margin-top: 10px;
         }

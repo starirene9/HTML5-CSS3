@@ -14,13 +14,14 @@
             color: inherit;
             text-decoration: none;
         }
-
+        /*a마저 초기화 시켜줘야함*/
         nav {
             background: gray;
             width: 60%;
             padding: 15px;
-            box-sizing: border-box;
-            margin: 20px auto 0;
+            box-sizing: border-box; /*패딩값때문에 커지지 않음 디폴트값 */
+            margin: 20px auto 0; /*마진값은 표 외부영역값 상-좌우-하 */
+            /* html 구조잡고 큰거에서부터 내려와야함 */
         }
         nav ul li {
             /* background: yellow; */
@@ -33,7 +34,7 @@
             margin-bottom: 0;
         }
         nav ul li a {
-            display: block;
+            display: block;  /*인라인요소를 블럭으로 바꿔줌*/
             padding: 15px;
             color: white;
             font-weight: 700;
