@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .box{
+        width: 550px;
+        height: 350px;
+        border: 4px dashed gray;
+        margin: 50px auto 0;
+
+        /* 배경속성 */
+        background-color: orange;
+        background-image: url('../../img/sky.jpg');
+        /* 로컬이면 상대경로 bgi는 자동으로 넘치는 부분을 hidden 한다 */
+        /* overflow: hidden; */
+
+
+        background-size: 150px 100px; 
+        /* 바둑판 배열이 나옴  w     h->  */
+        background-repeat: no-repeat; 
+        /* 반복하지 않게 설정 : 수동으로 걸어주어야 함 */
+        background-position: left bottom;
+        /*                  x축, y축 
+                            right top
+                            left center
+                            center center 혹은 center하면 정중앙 */
+
+        background: url('../../img/sky.jpg') orange no-repeat 150px 100px / 20px 100px;
+                                                 /* 순서 상관없지만 position(위치) /(슬래쉬) size*/
+
+    }
+    
+</style>
+<body>
+    <div class="box">
+        <!-- <img src="../../img/sky.jpg" alt="구름사진"> -->
+        <!--두 가지 경우 쓰는데 얘는 overflow: hidden; 사용-->
+    </div>
+</body>
+</html>
