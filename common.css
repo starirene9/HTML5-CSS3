@@ -16,9 +16,18 @@ a{
     text-decoration: none;
 }
 
-/*  */
+/* float 튀어나오는것 제어하는 clear 요소 */
 .clearfix::after {
     content: '';
     display: block;
     clear: both;
+}
+
+/* 화면 정중앙 배치 */
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }

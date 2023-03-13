@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background: tomato;
+        border: 4px dashed red;
+        border-radius: 15px;
+        font-size: 2em;
+        text-align: center;
+        line-height: 100px;
+
+        float: left;
+        box-shadow: 2px 2px 20px black;
+
+        margin-right: -30px;
+        position: relative;
+    }
+    /* position 속성이 다 걸려있으면 층수 조작이 가능 */
+    .box:nth-child(even) {
+        margin-top: 30px;
+    }
+
+    .box4 {
+        position: relative;
+        z-index: 1;
+        /*z-index의 기본값음 0이고 -면 낮은 층 
+        숫자가 올라갈수록 층처럼 올라간다 */
+    }
+    .box3 {
+        position: relative;
+        z-index: 1;
+    }
+    .box5 {
+       right: 220px;
+       /* box5가 3번 밑에 깔려있읍  */
+    }
+    .box1 {
+        left:300px;
+        z-index: 2;
+    }
+
+    /* box4 position 속성이 있을 경우 위에 쌓임 */
+    /* box5 나중에 작성한 요소일 수록 위에 쌓임 */
+</style>
+
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+</body>
+
+</html>

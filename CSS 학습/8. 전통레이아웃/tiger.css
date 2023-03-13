@@ -1,0 +1,91 @@
+@import url('../../common.css');
+
+body {
+    background: #696969;
+} 
+#wrapper {
+    background: white;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* begin header style */
+header h1 {
+    font-weight: bold;
+    background: #191970;
+    color: olivedrab;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+header h1 strong {
+    color:white;
+    font-size: 3.5em;
+}
+header h1 span {
+    font-size: 2em;
+}
+
+header h1 em {
+    color: #D3D3D3;
+    font-size: 2.5em;
+}
+/* end header style */
+
+/* begin container style */
+.container .menu {
+    width: 20%;
+    background-color: #D3D3D3;
+    padding-top: 20px;
+    height: 600px;
+    float: left;
+    /* menu에 float left 걸어주고!!! */
+}
+.container .menu li{
+    /* border: 1px solid #000; */
+    padding: 15px;
+}
+.container .menu a{
+    color:black;
+    text-decoration: underline;
+}
+.container .menu a:hover {
+    color: red;
+    text-decoration: underline;
+}
+/* end container style */
+
+/* begin content style */
+.container .content {
+    width: 80%;
+    height: 600px;
+    float: right;
+    /* menu에 float right 걸어주면 딱 맞음!!! */
+}
+.container .content h2 {
+    background-color: #800000;
+    color:yellow;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: '궁서', serif;
+    padding: 10px 20px;
+}
+.container .content p {
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.2;
+    letter-spacing: 1.4;
+}
+/* end content style */
+
+/* footer style */
+footer {
+    background: darkgray;
+}
+
+footer address {
+    /* border: 1px solid #000; */
+    padding: 20px;
+}
+/* end footer style */

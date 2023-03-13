@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{ 
+        width: 100px;
+        height: 100px;
+        background: red;
+        margin: 50px;
+        /* transition은 메인에 걸어줘야함 */
+        transition-property: width, background;
+        /* all하면 모두 다 */
+        transition-duration: 1s, 3s;
+        /* 500ms는 0.5초 */
+        transition-duration: 1s;
+        /* 올리고 1초있다가 하버 효과가 나타남 */
+        transition-timing-function: steps(5);
+        /* linear 같은 속도로 진행됨 */
+        transition: all 1s 2s linear;
+        /* 모든것을 1초에 할건데 2초 딜레이 하고 균일한 속도로 */
+    }
+    .box:hover {
+        width: 300px;
+        background: skyblue;
+    }
+
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

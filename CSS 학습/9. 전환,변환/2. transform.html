@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        margin: 50px;
+        background: orange;
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+        transition: 1s;
+    }
+    .box1:hover{
+        /* 회전효과 */
+        transform: rotate(-90deg);
+        /* -하면 반대방향 */
+    }
+    .box2:hover{
+        /* 이동효과 */
+        transform: translate(220px, 100px);
+        /* position: relative; 
+        left: 220px;
+        top: -100px;
+        움직이는건 똑같은데 영구적인 이동만 position 씀 */
+    }
+    .box3:hover{
+        /* 확대, 축소효과 */
+        transform: scale(1.2);
+        /* 1보다 낮아지면 축소 */
+        /* 돋보기 효과도 다 스케일로 처리 */
+        /* overflow: hidden 적용하면 넘치는 부분을 가려줌 */
+    }
+    .box4:hover{
+        /* 비틀기 효과      x    y*/
+        transform: skew(30deg, 20deg);
+    }
+    .box5:hover{
+        /* 다 줄때 */
+        transform: rotate(360deg) scale(1.3) translateX(100px);
+    }
+</style>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+</body>
+</html>

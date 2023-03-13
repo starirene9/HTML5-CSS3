@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        margin: 100px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        border: 4px dashed red;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+        /* h맞추어 lh주면 글자 중앙 정렬 됨 */
+        
+    }
+
+    .box:nth-child(2) {
+        position: relative;
+        right: 80px;
+        bottom: 30px;
+         /* relative : 자기 혼자 움직임 */
+         /* position 단독으로 쓰기보다는 방향과 함께 씀
+        기준이 왼쪽(쓴 것이 기준이됨) : 양수면 50만큼 음수면 왼쪽으로 이동 */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+
+</html>

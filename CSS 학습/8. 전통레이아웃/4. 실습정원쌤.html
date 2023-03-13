@@ -26,19 +26,18 @@
     }
 
     .container .intro {
-        background: blue;
+        /* background: blue; */
         text-align: center;
         background: #332f2f;
         color: white;
         padding:10px 0;
+        /* 패딩쓸때 위 아래와 좌우 */
     }
     .container .intro .yellow{
         font-size: 1.1em;
         color:yellow
     }
-    .container .gallery {
-        background: green;
-    }
+   
     .container .gallery {
         background: #6a6a6a;
         padding: 20px 0;
@@ -48,12 +47,15 @@
         width: 23.75%;
         margin-right: 1%;
         height: 340px;
+        /* 검사를 통해 최장 길이의 그림에 h를 측정하여 맞추기 */
         float: left; 
         padding: 5px;
-        /* float 걸기전에 width 분배생각(100-마진칸의 개수/n) + clearfix 체크  */
+        /* float 걸기전에 width 분배생각(100-마진칸의 개수/n) 
+        + clearfix는 부모에 걸기 ul  */
     }
     .container .gallery li:first-child {
         margin-left: 1%;
+        /* 좌측 마진 줄것 */
     }
 
     .container .gallery li .img-box {
@@ -70,8 +72,9 @@
         line-height: 1.4;
         text-align: justify;
         padding: 0 10px; 
-        /* 패딩 좌우만 주기 */
-        /* 전체적으로 li의 길이가 맞지 않음 */
+        /* 패딩 좌우만 살짝 안으로 들어가게 주기 */
+        /* 전체적으로 li의 길이가 맞지 않는 현상이 나오는데 최장 길이의 그림에 맞춘다
+        line 50번 참고 */
         
     }
     #tulip {
@@ -103,6 +106,8 @@
 
 </style>
 <body>
+
+   <!--.container>h1+h2.intro+ul.gallery>(li>div.img-box+p)*4--> 
     <div class="container">
         
         <h1>나의 아름다운 정원</h1>
@@ -141,5 +146,7 @@
         </ul>
 
     </div>
+
+
 </body>
 </html>

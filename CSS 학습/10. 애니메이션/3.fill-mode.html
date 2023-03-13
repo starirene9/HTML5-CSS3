@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background: tomato;
+        margin: 30px;
+        animation: moving 2s 2s;
+        /* 2초에 걸쳐 진행, 2초 딜레이 */
+        animation-fill-mode: both;
+        /* animation-fill-mode 애니메이션 위치를 설정 끝 위치에서 종료
+        both는 기존 위치를 신경쓰지 않rh 시작 위치에서 시작 */
+       
+    }
+    @keyframes moving{
+        from{
+            background: dodgerblue;
+            transform: translate(100px, 100px);
+        }
+        to{
+            background: yellowgreen;
+            transform: translate(300px, 100px);
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>

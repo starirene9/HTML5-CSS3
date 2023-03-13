@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,49 +11,60 @@
 https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
 " rel="stylesheet">
 <style>
-    body{
+    /* 전체적인 영역에 설정 */
+    body {
         font-family: '굴림체', Gulim, serif;
         font-size: 18px;
     }
-    section{
+    
+    section {
         width: 60%;
         margin: 30px auto 0;
         /* background: orange; */
     }
-    section .main-title{
+
+    section .main-title {
         /* background: orange; */
         font-size: 1.5em;
         font-weight: bold;
         margin-bottom: 20px;
+        /* mb로 하단의 컨텐츠와 거리두기 */
     }
+
     section .contents {
-         /* background: tomato; */
+        /* background: tomato; */
+        /* 영역 확인용 bg */
     }
+
     section .contents .food {
         /* border: 1px solid #000; */
         margin-bottom: 15px;
+        /* 박스끼리 띄운다 */
     }
-    section .contents .food .sub-title{
-        background: url('../../img/bg_bul.gif')
-                    no-repeat left center;
+
+    section .contents .food .sub-title {
+        background: url('../../img/bg_bul.gif') no-repeat left center;
+        /* 포지션/사이즈인데 굳이 사이즈 정해주지 않아도 됨 */
         margin-bottom: 15px;
         font-size: 1.2em;
         font-weight: bold;
-        padding: 10px 20px; /*위 아래 좌우*/
-       
+        padding: 10px 20px;
+        /*위 아래 좌우*/
+
     }
-    section .contents .food p{
-        background: pink url('../../img/bg_line.gif') 
-                    repeat-x left bottom ;  
-                    /* 반복을 할건데 x축을 기준으로 왼쪽 하단에서 우측으로 가도록 매우중요!!!!!!!! */
-                   
-        padding : 15px 15px 25px; /*위 좌우 아래 중요!!! 패딩으로 여백을 준 공간에 이미지를 띄운다*/
-        line-height: 1.4; 
+
+    section .contents .food p {
+        background: pink url('../../img/bg_line.gif') repeat-x left bottom;
+        /* 반복을 할건데 x축을 기준으로 왼쪽 하단에서 우측으로 가도록 ㅇ중요!!!!!!!! */
+                /* 상 좌우 하 */
+        padding: 15px 15px 25px;
+        /*매우 중요!!! 패딩으로 여백을 준 공간에 이미지를 띄운다*/
+        line-height: 1.4;
         /* 자간 간격 */
 
     }
-
 </style>
+
 <body>
     <section>
         <h1 class="main-title">배경 실습</h1>
@@ -78,9 +90,29 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
                     생활 유형을 가진 사람이라면 그 사람은 저녁 식사를 거르지
                     않도록 하는 것이 더욱 중요할 것 같다.</p>
             </div>
-        <div class="contents">
-
         </div>
     </section>
+
+    <hr>
+
+    <section>
+        <h1 class="main-title"></h1>
+        <div class="contents">
+            <div class="food">
+                <h2 class="sub-title"></h2>
+                <p></p>
+            </div>
+            <div class="food">
+                <h2 class="sub-title"></h2>
+                <p></p>
+            </div>
+            <div class="food">
+                <h2 class="sub-title"></h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
